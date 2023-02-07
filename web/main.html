@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Access-Control-Allow-Origin" content="*" />
+    <meta name="Access-Control-Allow-Headers" content="*" />
+    <title>Altitude</title>
+    <link rel="stylesheet" href="static/css/main.css" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="form">
+        <div class="faq-div"> <a class="faq" href="https://www.opentopodata.org/datasets/etopo1/">FAQ</a></div>
+
+        <form action="/get" method="post" id="sender">
+            <div class="form__inputs">
+                <input type="text" name="A" placeholder="Точка А">
+                <input type="text" name="B" placeholder="Точка Б">
+                <input type="number" name="Longitude-step" placeholder="Шаг Долготы(м)">
+                <input type="number" name="Latitude-step" placeholder="Шаг Широты(м)">
+                <select name="source" id="">
+                    <option value="mapzen">Mapzen</option>
+                    <option value="aster30m">Aster</option>
+                    <option value="srtm30m">SRTM30m</option>
+                    <option value="srtm90m">SRTM90m</option>
+                </select>
+                <div class="status-div"><div id="status">Статус</div></div>
+            </div>
+            <button class="form__btn" id="sen-btn">Получить данные</button>
+        </form>
+    </div>
+</div>
+</body>
+<script src="/static/js/main.js"></script>
+</html>
