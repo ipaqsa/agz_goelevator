@@ -9,7 +9,7 @@ https://git-scm.com
 ```
 Скопировать репозиторий себе
 ```asciidoc
-git clone 
+git clone https://github.com/ipaqsa/agz_goelevator
 ```
 Скачать и установить golang
 ```asciidoc
